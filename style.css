@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #212529;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 50px;
+}
+
+.navbar > h2{
+    color: #00b5d4;
+    font-weight: 600;
+}
+
+.navbar ul {
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #a3a1a1;
+    font-size: 16;
+    margin-right: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li:hover a{
+    color: #fff;
+}
+
+.navbar ul li:last-child a {
+    margin: 0;
+}
+
+.hire-btn {
+    background-color: #00b5d4;
+    padding: 6px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.hire-btn:hover {
+    background-color: #019fbb;
+}
+
+.main {
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main h4 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.main h4 span{
+    color: #00b5d4;
+}
+
+.main p{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.about-me {
+    background-color: #393f46;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.about-me h4 {
+    color: #fff;
+    padding-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-weight: 600;
+}
+
+.about-me .my-identity {
+    background-color: #00b5d4;
+    width: 80%;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    float: left;
+}
+
+.about-me .my-identity img{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.about-me .my-identity h5 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.about-me .my-identity ul {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding-left: 30px;
+}
+
+.about-me .my-identity ul li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.about-text {
+    margin-right: 35px;
+    text-align: justify;
+}
+.about-text p {
+    color: #ccc;
+    font-size: 18px;
+}
+
+.skills {
+    margin: 120px auto;
+    width: 90%;
+    height: auto;
+}
+
+.skills h3{
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+.skills .grid-skills {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    row-gap: 35px;
+    margin-top: 35px;
+}
+
+.skills .grid-skills img{
+    width: 312px;
+    height: auto;
+    border: 1px solid white;
+}
+
+.skills .grid-skills #person-laptop{
+    grid-row-start: 2;
+}
+
+.skills .grid-skills .grid-items-skills {
+    color: #fff;
+    align-self: start;
+}
+
+.skills .grid-skills .grid-items-skills p{
+    text-align: justify;
+}
+
+.experiences {
+    margin: 120px auto;
+    width: 90%;
+    height: auto;
+}
+
+.experiences h3 {
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
+.experiences .grid-exp {
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+
+}
+
+.experiences .grid-exp .grid-items-exp {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.experiences .grid-exp .grid-items-exp h5 {
+    text-align: center;
+    border-bottom: 2px solid white;
+    font-weight: 600;
+}
+
+.contact{
+    margin: 120px auto 60px;
+    width: 90%;
+    height: auto;
+    color: #fff;
+    background-color: #557cb3;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.contact h3 {
+    padding-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.contact form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 20px 50px;
+}
+
+.contact form input {
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 18px;
+}
+
+.contact form textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.contact form .send-btn {
+    border: none;
+    width: 80px;
+    border-radius: 50px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.contact .contact-info {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.contact .contact-info ul li {
+    list-style: none;
+    color: #212529;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact .contact-info ul p {
+    color: #2f3338;
+}
+
+footer {
+    height: 150px;
+    background-color: #007286;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .links a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+    transition: 0.3s color ease;
+}
+
+footer .links a:last-child {
+    margin-right: 0;
+}
+
+footer .links a:hover {
+    color: #00b5d4;
+}
+
+@media screen and (max-width: 680px) {
+    .navbar h2{
+        display: none;
+    }
+
+    .navbar .hire-btn {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: center;
+        margin: 5px 20px;
+    }
+
+    .main h4{
+        font-size: 28px;
+    }
+
+    .main p{
+        font-size: 18px;
+    }
+
+    .about-me {
+        display: block;
+    }
+
+    .about-me h4 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .about-me .my-identity {
+        height: 450px;
+        margin: 0 50px 30px;
+    }
+
+    .about-me .my-identity img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .about-me .my-identity h5{
+        font-size: 16px;
+    }
+
+    .about-me .my-identity p{
+        font-size: 14px;
+    }
+
+    .about-me .my-identity ul {
+        padding-left: 10px;
+    }
+
+    .about-me .my-identity ul li {
+        font-size: 15px;
+    }
+
+    .about-me .my-identity ul p {
+        font-size: 12px;
+    }
+
+    .about-me .about-text {
+        padding-bottom: 15px;
+        margin: 5px 25px;
+    }
+
+    .experiences .grid-exp {
+        display: grid;
+        row-gap: 18px;
+    }
+
+    .contact h3{
+        margin-left: 20px;
+    }
+
+    .contact form {
+        margin: 0 20px 18px;
+    }
+
+    .contact .contact-info {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 25px;
+    }
+}
+
+@media screen and (min-width: 680px) and (max-width: 1030px) {
+    .about-me .my-identity h5{
+        font-size: 16px;
+    }
+
+    .about-me .my-identity p{
+        font-size: 14px;
+    }
+
+    .about-me .my-identity ul {
+        padding-left: 10px;
+    }
+
+    .about-me .my-identity ul li {
+        font-size: 15px;
+    }
+
+    .about-me .my-identity ul p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .skills .grid-skills {
+        margin-top: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        row-gap: 0;
+    }
+
+    .skills .grid-skills #microsoft-office {
+        align-self: center;
+    }
+
+    .skills .grid-skills #person-laptop{
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main h4 {
+        font-size: 24px;
+    }
+
+    .main p {
+        font-size: 14px;
+    }
+
+    .about-me .my-identity{
+        margin: 0 40px 10px;
+    }
+
+    .contact {
+        display: block;
+        text-align: center;
+        height: auto;
+    }
+
+    .contact h3 {
+        margin-left: 0;
+    }
+
+    .contact form {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+    .contact #social-media {
+        display: none;
+    }
+
+    .contact .contact-info {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .navbar {
+        font-size: 12px;
+    }
+
+    .main h4{
+        font-size: 18px;
+    }
+
+    .main p {
+        font-size: 12px;
+        font-weight: 0;
+    }
+
+    .about-me .my-identity {
+        margin: 0 35px 10px;
+    }
+}
